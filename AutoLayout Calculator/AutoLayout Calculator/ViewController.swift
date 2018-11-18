@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+    @IBOutlet weak var label: UILabel!
+    // Input Label
+    @IBAction func numbers(_ sender: UIButton) {
+        label.text = label.text! + String(sender.tag-1)
+        // Add number pressed to Label
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
